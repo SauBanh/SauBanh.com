@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(bg.jpg) no-repeat center center;
+    background-size: cover;        
+}
+
+.side-menu{
+    position: fixed;
+    top: 25%;
+    right: -200px;
+    width: 200px;
+    background-color: #f1f1f1aa;
+    transition: .4s linear;
+}
+
+.side-menu.active{
+    right: 0;
+}
+
+.side-menu a{
+    display: block;
+    padding: 5px 5px;
+    color: #333;
+    font-size: 25px;
+    transition: .4s linear;    
+}
+
+.side-menu a i{
+    width: 25px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.side-menu a:hover{
+    background-color: #333;
+    color: #f1f1f1;
+}
+
+.toggle-btn{
+    position: absolute;
+    left: -40px;
+    top: 0;
+    width: 40px;
+    height: 60px;
+    background: #333;
+    color: #f1f1f1;
+    line-height: 60px;
+    text-align: center;
+    font-size: 60px;
+    cursor: pointer;    
+}
